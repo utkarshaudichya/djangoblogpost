@@ -1,0 +1,140 @@
+.content{
+  width: 60%;
+  float: left;
+  background: #bf5269;
+  color: white;
+  padding: 0 30px 30px 30px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  border-radius: 15px;
+}
+
+.container a{
+  color: white;
+}
+
+.container a:hover{
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.sidebar{
+  width: 39%;
+  float: right;
+  background: #a08d2e;
+  color: white;
+  padding: 0 30px 30px 30px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  border-radius: 15px;
+}
+
+#info{
+  color: #dbd6c5;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+#postbody{
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #e5e2d7;
+  text-align: justify;
+}
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1553326875-1a32421b5e36?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table,tr,td{
+  padding: 10px;
+}
+
+input[type='text']{
+  color: black;
+}
+
+input[type='Textarea'], input[type='email'], input[type='password'], input[type='number']{
+  color: black;
+}
+
+#comment{
+  color: #f49b42;
+  font-style: italic;
+}
+
+h3 a:hover{F
+  color: 	#937474;
+}
+
+#tags{
+  margin-left: 20px;
+}
+#tags a{
+  display: inline;
+  background-color: #d1cec4;
+  color: #3a5877;
+  border-radius: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 1.0em;
+}
+
+#postcount{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+/* .loginform{
+  border: 3px;
+  border-radius: 5px;
+  padding: 10px;
+  background: #bf5269;
+  color: white;
+} */
+
+.logincontent{
+    width: 60%;
+    background: #bf5269;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    border-radius: 15px;
+}
+
+.navbar-img{
+  width: 30px;
+  height: 35px;
+  float: left;
+  background-size: auto 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.myposticon{
+  width: 30px;
+  height: 30px;
+  background-size: auto 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#mypost{
+  color: black;
+  background: white;
+}
+
+th{
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+tr,td{
+  padding: 20px;
+}

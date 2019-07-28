@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block title_block %}Edit Post{% endblock %}
+{% block content %}
+  <h1>Update Blog</h1>
+  <hr>
+  <form method="post">
+    <table>
+      {{ form.as_table }}
+    </table>
+    {% csrf_token %}
+    <input type="submit" class="btn btn-success btn-lg" value="Update">
+    <a href="{% url 'my_posts' %}" class="btn btn-warning btn-lg">Cancel</a>
+  </form>
+{% endblock %}

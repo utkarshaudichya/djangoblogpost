@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+  {% block title_block %}{{ block.super }} - Home{% endblock %}
+  {% block content %}
+    <h1>List of all Blogs</h1>
+    <hr>
+    {% if tag %}
+      <h2>Posts tagged with '{{tag.name}}'</h2>
+    {%endif%}
+    {% for post in post_list %}
+      <h3 id="title"><a href="{{post.get_absolute_url}}">{{ post.title|title }}</a></h3>
+      <p id="info">Published on {{ post.publish }} by {{ post.author|title }}</p>
+      <!--<p id="tags">Tags:
+        {% for tag in post.tags.all %}
+          <a href="{%url 'post_list_by_tag_name' tag.slug %}">{{tag.name}}</a>
+          {% if not forloop.last %},{% endif %}
+        {% endfor %}
+      </p> -->
+      <p id="postbody">{{ post.body | truncatewords:30 }}</p>
+      <!-- <a href="#" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like</a>
+      <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>Unlike</a> -->
+      {% empty %}
+        <div class="">
+          <h3>No Post Found having Search query : {{ request.GET.q }}</h3>
+        </div>
+    {% endfor %}
+    {% include 'blog/pagination.html' with page=post_list %}
+  {% endblock %}

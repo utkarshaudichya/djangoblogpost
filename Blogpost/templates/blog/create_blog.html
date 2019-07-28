@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+  {% block content %}
+    <h1 align="center">Create New Blog</h1>
+    <hr>
+    <form method="post" class="newblog">
+      <table align="center">
+        {{ form.as_table }}
+      </table>
+      {% csrf_token %}
+      <center><input type="submit" class="btn btn-primary btn-lg" value="Post" action="{% url 'post_list' %}"></center>
+    </form>
+  {% endblock %}
