@@ -1,3 +1,0 @@
-id = utkarsh
-email = abcd@gmail.com
-pass = audichya
